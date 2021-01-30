@@ -1,0 +1,22 @@
+{
+  "name": "zentube",
+  "version": "0.0.1",
+  "description": "Watch youtube video without distractions",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danilocgsilva/ZenTube.git"
+  },
+  "keywords": [
+    "Youtube"
+  ],
+  "author": "Danilo Carlos de Góes Silva",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danilocgsilva/ZenTube/issues"
+  },
+  "homepage": "https://github.com/danilocgsilva/ZenTube#readme"
+}
