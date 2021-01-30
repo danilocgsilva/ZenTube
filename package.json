@@ -4,7 +4,7 @@
   "description": "Watch youtube video without distractions",
   "main": "index.js",
   "scripts": {
-    "watch": "node index.js"
+    "generate": "node index.js"
   },
   "repository": {
     "type": "git",

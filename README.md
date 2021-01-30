@@ -15,5 +15,5 @@ You need first to generate the embedded link via youtube in the *share* options 
 
 Then, just use it in the command line (using npm, that must be installed in your environment).
 ```
-npm run watch <embedded_link> <file_name>
+npm run generate <embedded_link> <file_name>
 ```

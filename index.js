@@ -15,3 +15,5 @@ writeFile(
     fileContentTemplate.replace("@", youtubeVideoAlias),
     fullFilePath
 )
+
+console.log("Finished. Check the generated file: " + fullFilePath)
