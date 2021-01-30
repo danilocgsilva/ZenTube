@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/danilocgsilva/ZenTube/issues"
   },
-  "homepage": "https://github.com/danilocgsilva/ZenTube#readme"
+  "homepage": "https://github.com/danilocgsilva/ZenTube#readme",
+  "dependencies": {
+    "screenz": "^1.0.0"
+  }
 }
