@@ -17,3 +17,8 @@ Then, just use it in the command line (using npm, that must be installed in your
 ```
 npm run generate <embedded_link> <file_name>
 ```
+
+Alternativelly, you can also do:
+```
+node . <embedded_link> <file_name>
+```
