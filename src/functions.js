@@ -1,4 +1,4 @@
-const { exception } = require('console');
+const { width, height } = require("robotjs").getScreenSize()
 
 fs = require('fs');
 
@@ -9,12 +9,17 @@ var checkErr = function(err) {
     return ""
 }
 
+var getYoutubeAliasVideo = function() {
+    let youtubeVideoAlias = process.argv[2]
+    if (!youtubeVideoAlias) {
+        console.log("You forget to provides the first argument to be the video alias.")
+        process.exit(0)
+    }
+    return youtubeVideoAlias
+}
+
 module.exports = {
 
-    getContentTemplace: function() { 
-        return fs.readFileSync('./assets/htmltemplate').toString()
-    },
-    
     writeFile: function(fileContent, filePath) {
         fs.writeFile(filePath, fileContent, checkErr)
     },
@@ -32,13 +37,15 @@ module.exports = {
         return fileName
     },
 
-    getYoutubeAliasVideo: function() {
-        let youtubeVideoAlias = process.argv[2]
-        if (!youtubeVideoAlias) {
-            console.log("You forget to provides the first argument to be the video alias.")
-            process.exit(0)
-        }
-        return youtubeVideoAlias
+    transformHtmlTemplatedata: function() {
+        let rawTemplate = fs.readFileSync('./assets/htmltemplate').toString()
+        let embWidth = width * 0.618
+        let embHeight = height * 0.618 - 160
+        let youtubeAlias = getYoutubeAliasVideo()
+
+        return rawTemplate.replace("@1", embWidth)
+            .replace("@2", embHeight)
+            .replace("@3", youtubeAlias)
     }
 
 }
