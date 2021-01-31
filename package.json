@@ -1,6 +1,6 @@
 {
   "name": "zentube",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "description": "Watch youtube video without distractions",
   "main": "index.js",
   "scripts": {
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/danilocgsilva/ZenTube/issues"
   },
-  "homepage": "https://github.com/danilocgsilva/ZenTube#readme"
+  "homepage": "https://github.com/danilocgsilva/ZenTube#readme",
+  "dependencies": {
+    "robotjs": "^0.6.0"
+  }
 }
