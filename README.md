@@ -9,6 +9,13 @@ With ZenTube, you create just a simple html with video embedded. With this:
 * Watch video without any distraction.
 * No intrusive way of Youtube picture-in-picture.
 
+## Lib required
+
+If you are in a Debian like Linux flavor, you may experience an error regarting the `node X11/Xutil.h` file. If so, just run this command to install a few packages in your system:
+```
+sudo apt-get install libxtst-dev libpng++-dev
+```
+
 ## How to use
 
 You need first to generate the embedded link via youtube in the *share* options from the video.
